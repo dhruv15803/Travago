@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding:0px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  color:black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navbar{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding:10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navLeft{
+  display: flex;
+}
+
+#navLeft img{
+  height:100px;
+}
+
+#navRight{
+  position: absolute;
+  right:200px;
+}
+
+.navBtn{
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+
+.navBtn:hover{
+  background-color: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Tours css */
+
+
+
+.tours-heading-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tours-heading-container a{
+  color: red;
 }
+
+
+.tours-inner-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-div{
+  
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding:50px;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  gap:30px;
+}
+
+.tour-price p{
+  font-size: 1.4rem;
+}
+
+.btn{
+  width: 200px;
+  height:35px;
+  margin: 10px;
+  background-color: white;
+  border:2px solid red;
+  color: red;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+}
+
+
+
+.interested{
+  width:150px;
+  height:35px;
+  margin: 10px;
+  background-color: white;
+  color: green;
+  border:2px solid green;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.interested:hover{
+  background-color: green;
+  color: white;
+}
+
+.not-interested{
+  width:150px;
+  height:35px;
+  margin: 10px;
+  background-color: white;
+  color: red;
+  border:2px solid red;
+  transition: 0.3s;
+}
+
+.not-interested:hover{
+  background-color: red;
+  color: white;
+}
+
+.tour-image{
+  display: flex;
+  height:500px;
+}
+
+
+.loading-container{
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid black;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+
+  .text-btn{
+    background-color: white;
+    border:none;
+    color: red;
+  }
