@@ -23,15 +23,8 @@ function App() {
 
 
   useEffect(()=>{
-    try{
-      setLoading(true);
-      fetch('https://course-api.com/react-tours-project').then(res=>res.json()).then((data)=>setTours(data));
-      setLoading(false);
-    } catch(error){
-      setLoading(false);
-      console.log(error);
-    }
-  },[tours])
+    fetch('https://course-api.com/react-tours-project').then(res=>res.json()).then((data)=>setTours(data));
+  },[])
 
   const addInterest = (index)=>{
     for(let i=0;i<interest.length;i++){
